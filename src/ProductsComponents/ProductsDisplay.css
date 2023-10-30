@@ -1,0 +1,31 @@
+.display__wrapper{
+    margin-top: 0px;
+    width: 100%;
+    margin-top: 120px;
+}
+
+.display__wrapper .produucts__display{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    padding: 25px;
+    margin-top: -10px;
+}
+ 
+@media screen and (max-width:1000px){
+    .display__wrapper{
+        margin-top: 0px;
+        height: 200vh;
+        width: 100%;
+        margin-top: 100px;
+    }
+    
+.display__wrapper .produucts__display{
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    padding: auto;
+    margin-top: -10px;
+}
+    
+}

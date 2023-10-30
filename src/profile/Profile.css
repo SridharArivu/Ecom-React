@@ -1,0 +1,164 @@
+.profile__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    padding-top: 8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    grid-template-areas:'grid1 grid2 grid2 grid2';
+                       
+}
+.hamburger__icon{
+    display: none;
+}
+
+.profile__wrapper .my__account{
+    position: absolute;
+    top: 8rem;
+}
+
+.leftComponent{
+    grid-area: grid1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffff;
+    padding: 70px 15px 15px 15px;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.leftComponent button{
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: space-between;
+    color:#4F4F51 ;
+    width: 100%;
+    height: 90px;
+    margin: px;
+    border-radius: 5px;
+    
+}
+.leftComponent button:hover{
+
+    .right__icons{
+        display: flex;
+        position: absolute;
+        left: 20em;
+    }
+
+    background-color:beige;
+}
+
+.leftComponent button span{
+    position: absolute;
+    left: 9em;
+}
+
+.leftComponent button .right__icons{
+    display: flex;
+    position: absolute;
+    color: cadetblue;
+    left: 19.5em;
+    transition: 1s;
+}
+
+.leftComponent .user__name{
+    position: absolute;
+    top: 12.3rem;
+    left: 2.5em;
+}
+
+.rightComponent{
+    grid-area: grid2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color:#ffff;
+    padding: 80px 20px 20px 20px;
+    margin-top: 50px;
+    margin-left: 30px;
+    width: 98%;
+}
+
+.rightComponent h3{
+    position: absolute;
+    top: 7em;
+    left: 17em;
+    font-weight: bold;
+}
+
+.Mobile__com__wrapper{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    .rightComponent{
+        display: none;
+    }
+    .leftComponent{
+        display: none;
+    }
+    .my__account{
+        display: none;
+    }
+    .profile__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding-top: 2rem;
+        padding-left: 0rem;
+        padding-right: 0rem;  
+        background-color: #4F4F51;           
+    }
+    .Mobile__com__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #ffff;
+        padding: 70px 5px 5px 5px;
+        justify-content:flex-start;
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        border-radius: 10px;
+    }
+    .Mobile__com__heading{
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .Mobile__com__wrapper button{
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-between;
+        color:#4F4F51 ;
+        width: 100%;
+        height: 90px;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+       
+        
+    }
+    .Mobile__com__wrapper button span{
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+        font-size:x-large;
+        height: 100%;
+        width: 15rem;
+    }
+    
+   
+    
+}

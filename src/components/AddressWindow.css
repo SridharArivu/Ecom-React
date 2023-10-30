@@ -1,0 +1,211 @@
+.ADD__Address__input__{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+}
+.address__window__wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 10px;
+}
+.address__header{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    width: 85%;
+    height: 5rem;
+    margin-left:2rem;
+    padding-top: 10rem;
+    border-bottom: 2px solid #4F4F51;
+    
+}
+
+.address__header h2{
+    margin-top: -3rem;
+    font-weight: bold;
+}
+.Select__heading{
+    position: absolute;
+    top: 0.5em;
+
+}
+
+
+.close__icon{
+    position: absolute;
+    top: 1em;
+    left: 48em;
+}
+
+.address__window__grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    padding-top: 2em;
+    padding-right: 11.5rem;
+    justify-content: space-between;
+}
+
+.Addrees_window__card_wrapper {
+    display: flex ; 
+    flex-direction: column;
+    height: 13em !important;
+    width: 23em;
+    padding: 15px;
+    margin-left: 2rem;
+    border: 2px solid #D6D6D6;
+    border-radius: 10px;
+    margin-bottom: 3em; 
+    position: relative;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #ffff;
+}
+
+.address__edit_btn{
+    position: absolute;
+    left: 20em;
+    top: 0.5em;
+    color: blueviolet;
+}
+.address__edit_btn:hover{
+    text-decoration: underline;
+}
+
+.Addrees_window__card_wrapper .fstName__lstName{
+        display: flex;
+        flex-direction: row;    
+}
+
+.fstName__lstName p{
+    margin-right: 10px;
+    font-weight: bold; 
+}
+
+.Addrees_window__card_wrapper .street{
+    color: #4F4F51;
+    margin-left: 10px;
+    position: absolute;
+    top: 3em;
+}
+.Addrees_window__card_wrapper .city{
+    color: #4F4F51;
+    position: absolute;
+    top: 4.3em;
+    left: 1.5em;
+}
+
+.Addrees_window__card_wrapper .State__pincode{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 5.6em;
+    left: 1.5em;
+}
+
+.State__pincode p{
+    margin-right: 10px;
+    color: #4F4F51;
+}
+
+.Addrees_window__card_wrapper .mobile__numbers{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 7.5em;
+}
+
+.mobile__numbers p{
+    margin-right: 10px;
+    
+}
+
+.select__address__btn{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color:0000;
+    position: absolute;
+    top: 9.7em;
+
+    border:2px solid #D6D6D6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.select__address__btn:hover{
+    background-color:antiquewhite;
+    border:2px solid rgb(246, 220, 185);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    color: #232222;
+}
+
+@media screen and (max-width:1000px) {
+    .ADD__Address__input__{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100vh;
+        padding-left: 0rem;
+        padding-top: 0rem;
+    }
+    .address__window__wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0em;
+        padding-right: 0em;
+        border-radius: 10px;
+        
+        
+    }
+    .address__header{
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+        height: 5rem;
+        margin-left:0rem;
+        padding-top: 8.5rem;
+        padding-left: 0.5rem;
+        border-bottom: none; 
+    }
+    .address__header h2{
+        font-size:small;
+        letter-spacing: 1px;
+    }
+    .address__window__grid{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 1em;
+        padding-right: 0rem;
+        justify-content: center;
+    }
+    .Addrees_window__card_wrapper {
+        display: flex ; 
+        flex-direction: column;
+        height: 13em !important;
+        width: 90%;
+        padding: 15px;
+        margin-left: 0rem;
+        border: 2px solid #D6D6D6;
+        border-radius: 10px;
+        
+        margin-bottom: 1em; 
+        position: relative;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: #ffff;
+    }
+}

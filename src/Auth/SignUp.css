@@ -1,0 +1,194 @@
+.bg__signup{
+    
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 91.9vh;
+    padding-top: 8rem;
+}
+
+.signup__wrapper{
+    position: relative;
+    width: 400px;
+    height: 580px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0, 0,.5) ;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+}
+
+.signup__wrapper .form__box__signup{
+    width: 100%;
+    padding: 40px;
+}
+
+.form__box__signup h2{
+    font-size: 2rem;
+    color: #4F4F51;
+    text-align: center;
+   
+}
+
+.signup_input_box{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    border-bottom: 2px solid #e1dada;
+    margin: 0px 0px 0px 0px;
+}
+
+.signup_input_box .signup_email_label{
+    position: absolute;
+    top:45px;
+    left: 23.5px;
+    transform: translate(-50%);
+    font-size: 1em ;
+    color: #4F4F51;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.signup_input_box .signup_username_label{
+    position: absolute;
+    top:45px;
+    left: 43px;
+    transform: translate(-50%);
+    font-size: 1em ;
+    color: #4F4F51;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+
+
+.signup_input_box .signup_pass_label {
+    position: absolute;
+    top:45px;
+    left: 41px;
+    transform: translate(-50%);
+    font-size: 1em ;
+    color: #4F4F51;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+.signup_input_box .signup_confirm_pass_label {
+    position: absolute;
+    top:45px;
+    left: 75px;
+    transform: translate(-50%);
+    font-size: 1em ;
+    color: #4F4F51;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.signup_input_box .signup_number_label{
+    position: absolute;
+    top:45px;
+    left: 63px;
+    transform: translate(-50%);
+    font-size: 1em ;
+    color: #4F4F51;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .2s;
+}
+
+.signup_input_box input:focus~label,
+.signup_input_box input:valid~label{
+    top: 25px;
+}
+
+
+.signup_input_box input{
+     width: 100%;
+     height: 100%;
+     background: transparent;
+     border: none;
+     outline:none;
+     font-size: 1em;
+     color: #4F4F51;
+     font-weight: 600;
+     padding: 50px 0px 0px 5px ;
+}
+
+.signup_input_box .pass__error{
+    position: absolute;
+    top: 85px;
+    left: 3px;
+}
+
+.icon{
+    position: absolute;
+    color: #4F4F51;
+    font-size: 1.2rem;
+    line-height: 120px;
+    right: 8px;
+}
+
+.signup__btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #e2dada;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.signup__register{
+    font-size: .9em;
+    color: #4F4F51;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 -10px;
+}
+
+.signup__register p a {
+    color: #4F4F51;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup__register p a:hover {
+    
+    text-decoration: underline;
+    
+}
+
+@media screen and (max-width:1000px) {
+    .signup__wrapper{
+        position: relative;
+        width: 95%;
+        height: 580px;
+        background: transparent;
+        border: 2px solid rgba(255,255,255,.5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0,0, 0,.5) ;
+        display: flex;
+        justify-content: center;
+        font-family: 'Poppins', sans-serif;
+        align-items: center;
+    }
+    .signup__wrapper .form__box__signup{
+        width: 100%;
+        padding: 20px;
+    }
+}

@@ -1,0 +1,17 @@
+.Product__Page{
+    width: 100%;
+}
+
+.ProductPage__components{
+    display: grid;
+    grid-template-columns: auto auto ;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:1000px){
+    .ProductPage__components{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

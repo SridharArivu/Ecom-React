@@ -1,0 +1,188 @@
+.collage__wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    grid-template-areas:'content1 content1 content3 content4'
+                        'content2 content2 content3 content4';
+    
+}
+
+.content1{
+    grid-area: content1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1fr;
+    height:50vh;
+    border-radius: 20px;
+}
+.content2{
+    display: flex;
+    grid-area: content2;
+    align-items: center;
+    justify-content: center;
+    width:1fr;
+    height: 50vh;
+    border-radius: 20px;
+}
+.content3{
+    display: flex;
+    grid-area: content3;
+    align-items: center;
+    justify-content: center;
+    height:0.5fr;
+    width:50vh;
+    border-radius: 20px;   
+}
+.content4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: content4;
+    height:0.5fr;
+    width:50vh;
+    border-radius: 20px;
+}
+
+.collage__wrapper .content1 .img1{
+    width:97%;
+    height:97%;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.collage__wrapper .content2 .img2{
+   
+    width:97%;
+    height:97%;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.collage__wrapper .content3 .img3{
+   
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.collage__wrapper .content4 .img4{
+   
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    transition: 1s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.collage__wrapper .content1 .img1:hover{
+    width:99%;
+    height:99%;
+    border-radius: 10px;
+}
+.collage__wrapper .content2 .img2:hover{
+    width:99%;
+    height:99%;
+    border-radius: 10px;
+}
+.collage__wrapper .content3 .img3:hover{
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+}
+.collage__wrapper .content4 .img4:hover{
+    width: 99%;
+    height: 99%;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:1000px){
+    .collage__wrapper{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+        grid-template-areas:'content1 content1 content1 content1'
+                            'content2 content2 content2 content2'
+                            'content3 content3 content4 content4'
+                            'content3 content3 content4 content4';
+    }
+    .content1{
+        grid-area: content1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 98%;
+        height: 98%;
+        border-radius: 20px;
+    }
+    .content2{
+        display: flex;
+        grid-area: content2;
+        align-items: center;
+        justify-content: center;
+        width:98%;
+        height: 98%;
+        border-radius: 20px;
+    }
+    .content3{
+        display: flex;
+        grid-area: content3;
+        align-items: center;
+        justify-content: center;
+        height: 98%;
+        width: 98%;
+        border-radius: 20px; 
+    }
+    .content4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: content4;
+        height: 98%;
+        width: 98%;
+        border-radius: 20px;
+    }
+    
+    .collage__wrapper .content1 .img1{
+        width:100%;
+        height:100%;
+        border-radius: 10px;
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    .collage__wrapper .content2 .img2{
+       
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .collage__wrapper .content3 .img3{
+       
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .collage__wrapper .content4 .img4{
+       
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        transition: 1s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+}
+
+

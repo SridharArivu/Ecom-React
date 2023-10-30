@@ -1,0 +1,66 @@
+.swiper__wrapper__trending{
+    margin-top: 15px;
+    padding-left: 20px;
+    margin-bottom: 50px;
+    height: 34rem;
+    width: 100%;
+    z-index: -999;
+}
+.swiper__wrapper__trending h2{
+    padding: 5px;
+    font-weight:bold;
+    z-index: -999;
+}
+
+.swiper-button-next{
+    color: black;
+}
+.swiper-button-prev{
+    color: black;
+}
+
+
+@media screen and (max-width:1000px){
+    .swiper__wrapper__trending{
+        margin-top: 10px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        height: 28rem;
+        width: 100%;
+        z-index: -999;
+    }
+}
+
+@media screen and (max-width:500px){
+    .swiper__wrapper__trending{
+        margin-top: 10px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+        height: 30rem;
+        width: 100%;
+        z-index: -999;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+       display: none;
+    }
+}
+@media screen and (max-width:300px){
+    .swiper__wrapper__trending{
+        margin-top: 10px;
+        padding-left: -20px;
+        margin-left: -20px;
+        margin-bottom: 10px;
+        height: 28rem;
+        width: 100%;
+        z-index: -999;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+       display: none;
+    }
+}

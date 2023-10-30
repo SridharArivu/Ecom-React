@@ -1,0 +1,33 @@
+.box-container{
+    background-color: #ffffff;
+    align-items: center ;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #D6D6D6;
+    position: fixed;
+    margin-top: 62px;
+}
+
+.category__list a{
+    text-decoration: none;
+    color: #4F4F51;
+}
+
+.category__list li{
+    
+    list-style-type: none;
+}
+
+.category__list ul{
+    padding: 14px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1000px){
+    .box-container{
+       display:none
+    }
+}

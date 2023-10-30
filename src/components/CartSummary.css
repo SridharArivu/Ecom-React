@@ -1,0 +1,137 @@
+.summary__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 10px;
+}
+.summary{
+    width: 27rem;
+}
+.indication{
+    margin-top: 10px;
+    margin-bottom: 7px;
+    color:#4C9A2A;
+}
+.tick{
+    margin-bottom: 2px;
+    color:#4C9A2A;
+}
+
+.order__Summary{
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+}
+
+.details__summary{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3px;
+    height: 35px;
+    border-bottom: 1.8px solid #cbdacf;
+}
+.details__summary p {
+    font-weight: bold;
+}
+
+.details__Total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    height: 50px;
+}
+
+.details__Total h4{
+    font-weight: bold;
+}
+
+.checkout__btn{
+    height: 50px;
+    width: 200px;
+    background-color: #F58F7C;
+    color: #000000;
+    border-radius: 5px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    position: relative;
+    padding-right: 2em;
+    
+}
+
+.checkout__btn:hover{
+   
+
+    .arrow__btn{
+        position: absolute;
+        left: 9.5em;
+     }   
+ }
+ .arrow__btn{
+    position: absolute;
+    left: 9em;
+    transition: 1s;
+ }
+
+ @media screen and (max-width:1000px) {
+    .summary__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        border-radius: 10px;
+    }
+    .summary{
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .indication{
+        margin-top: 10px;
+        margin-bottom: 7px;
+        color:#4C9A2A;
+    }
+    .tick{
+        margin-bottom: 2px;
+        color:#4C9A2A;
+    }
+    
+    .order__Summary{
+        font-weight: bold;
+        margin-bottom: 10px;
+        letter-spacing: 3px;
+    }
+    
+    .details__summary{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3px;
+        height: 35px;
+        border-bottom: 1.8px solid #cbdacf;
+    }
+    .details__summary p {
+        font-weight: bold;
+    }
+    
+    .details__Total{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 5px;
+        height: 50px;
+    }
+    
+    .details__Total h4{
+        font-weight: bold;
+    }
+ }
+ 

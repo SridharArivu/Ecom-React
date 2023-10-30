@@ -1,0 +1,183 @@
+.Person__wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+.User__details{
+    display: flex;
+    flex-direction: row;
+    height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+.User__details .details{
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
+.User__details a {
+    position: absolute;
+    left: 55rem;
+    top: 1em;
+    text-decoration: none;
+    color: #464646;
+}
+
+.User__details a:hover {
+    text-decoration: underline;
+    color: #464646;
+}
+
+.recent__order{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    
+}
+
+.recent__order h2{
+    font-weight: bold;
+}
+
+.recent__order .recent__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+    color: #464646;
+    margin-top: 1em;
+}
+
+.recent__order .container__box{
+    height: 40px;
+    width:130px; 
+}
+
+.recent__order .container__box__ID{
+    height: 40px;
+    width:120px; 
+    margin-right: 20px;
+}
+.recent__order .container__box__name{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width:220px;
+    margin-right: 20px; 
+}
+
+.recent__order .container__box__address{
+    height: 40px;
+    width:220px; 
+    margin-right: 20px;
+}
+
+.recent__order .container__box__price{
+    height: 40px;
+    width:120px; 
+    margin-left: 30px;
+}
+
+@media screen and (max-width:1000px){
+    .Person__wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .User__details a {
+        display: none;
+        position: absolute;
+        left: 55rem;
+        top: 1em;
+        text-decoration: none;
+        color: #464646;
+    }
+    
+    
+    .User__details{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        position: relative;
+    }
+    
+    .User__details .details{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        padding-left: 5px;
+        padding-right: 10px;
+    }
+    .User__details a {
+        position: absolute;
+        left: 55rem;
+        top: 1em;
+        text-decoration: none;
+        color: #464646;
+    }
+    
+    .User__details a:hover {
+        text-decoration: underline;
+        color: #464646;
+    }
+    
+    .recent__order{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;  
+    }
+    
+    .recent__order h2{
+        font-weight: bold;
+    }
+    
+    .recent__order .recent__heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-weight: bold;
+        color: #464646;
+        margin-top: 1em;
+        width: 100%;
+    }
+    
+    .recent__order .container__box{
+        height: 40px;
+        width:130px; 
+    }
+    
+    .recent__order .container__box__ID{
+        height: 40px;
+        width:200px; 
+        margin-right: 10px;
+        font-size: small;
+    }
+    .recent__order .container__box__name{
+        display: none;
+        align-items: center;
+        height: 40px;
+        width:220px;
+        margin-right: 10px; 
+    }
+    
+    .recent__order .container__box__address{
+        display: none;
+        height: 40px;
+        width:180px; 
+        margin-right: 20px;
+    }
+    
+    .recent__order .container__box__price{
+        height: 40px;
+        width:120px; 
+        margin-left: 10px;
+    }
+}
+

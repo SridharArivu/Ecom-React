@@ -1,0 +1,21 @@
+.Order__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #ffff;
+    padding-top: 6rem;
+    position: relative;
+}
+
+.Order__heading{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.back__btn{
+    position: absolute;
+    left: 0.5em;
+    top: 6rem;
+}
