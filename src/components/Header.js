@@ -10,6 +10,7 @@ import { useState } from 'react';
 import Axios from '../api/Axios'
 import { useContext } from 'react';
 import Context from '../Context/Context';
+import Logo from '../Images/Logo.png'
 
 
 
@@ -38,7 +39,7 @@ const Header = () => {
     <>
     <nav className='header__main'>
       <div className="header__logo">
-          <a href='/' className='header_Logo'><h2>Logo</h2></a>
+          <img className='header_Logo' src={Logo} alt="WebsiteLogo" /> 
       </div>
       <form className="searchBar" onSubmit={HandleSubmit} >
         <input type='text' value={searchItem} onChange={(e)=>SetSearchItem(e.target.value)} placeholder='Search for Products'/>

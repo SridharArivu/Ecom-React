@@ -21,8 +21,6 @@
     grid-column: 2/3;
     text-decoration: none;
     align-items: center;
-    justify-content: ;
-    color: #4F4F51;
     margin-left: 60px;
 }
 
@@ -157,7 +155,6 @@
         align-items: center;
         justify-content: center;
         padding-right: 70px;
-        color: #4F4F51;
     }
     
     .searchBar{

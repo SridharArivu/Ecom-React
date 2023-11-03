@@ -9,7 +9,7 @@ import Axios from "../api/Axios";
 import ShoppingCart from '../CartComponnets/ShoppingCart'
 import SummaryPage from '../CartComponnets/ViewSummary'
 import AddressWindow from './AddressWindow';
-
+import Logo from '../Images/LogoSymbol.png'
 
 
 
@@ -76,9 +76,9 @@ console.log(address);
       key: "rzp_test_SYxQKFMJrZMFd7",
       amount: TotalAmount * 100,
       currency: "INR",
-      name: "Acme Corp",
-      description: "Test Transaction",
-      image: "https://example.com/your_logo",
+      name: "HappeiShop",
+      description: "Complete Your Transaction",
+      image: {Logo},
       order_id: orderID,
       handler: function (response){
           localStorage.setItem("Razorpay_order_id",response.razorpay_order_id);
@@ -90,9 +90,9 @@ console.log(address);
 
     },
       prefill: {
-        name: "Gaurav Kumar",
-        email: "gaurav.kumar@example.com",
-        contact: "9000090000"
+        name: "Sridhar",
+        email: "sridhararivu369@gmail.com",
+        contact: "8946018164"
     },
     notes: {
       "address": "Razorpay Corporate Office"

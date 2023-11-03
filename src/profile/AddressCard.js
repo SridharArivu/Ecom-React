@@ -26,8 +26,8 @@ const AddressCard = ({item,SetViewAddress,SetViewShoppingCart,SetViewSummary}) =
           </div>
 
           <div className='mobile__numbers'>
-              <p>{item.mobNumber}</p>
-              <p>{item.altMobNumber}</p>
+              <p>+91{item.mobNumber}</p>
+              <p>+91{item.altMobNumber}</p>
           </div>
 
           <button onClick={()=> { 
