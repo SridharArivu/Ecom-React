@@ -6,7 +6,7 @@
     height: 70px;
     display: grid;
     background-color: #ffff;
-    grid-template-columns: 5rem 1fr 2fr 5rem 0.8fr 3rem ;
+    grid-template-columns: 10rem 0.5fr 2fr 5rem 0.8fr 3rem ;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid #D6D6D6;
@@ -22,6 +22,7 @@
     text-decoration: none;
     align-items: center;
     margin-left: 60px;
+    width: 100%;
 }
 
 
@@ -155,6 +156,8 @@
         align-items: center;
         justify-content: center;
         padding-right: 70px;
+        width: 60%;
+        padding-bottom: 3px;
     }
     
     .searchBar{
