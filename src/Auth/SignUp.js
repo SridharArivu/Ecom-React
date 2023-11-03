@@ -49,7 +49,7 @@ const SignUp = () => {
       try {
         const Response = await Axios.post(REGISTER__URL, JSON.stringify({
             username:user,
-            email:emailId,
+            email:emailId.toLowerCase(),
             password:pass,
             mobileNumber:number
         }),

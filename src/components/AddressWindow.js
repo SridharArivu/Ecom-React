@@ -7,6 +7,7 @@ import AddressInput from '../profile/AddressInput'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 
+import AddressCard from '../profile/AddressCard'
 
 const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
     const [Address, SetAddress] =  useState([]);
@@ -62,34 +63,14 @@ const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
         :
         <div className='address__window__grid'>
         {
-          Address.map((item)=>{
+          Address.map((items)=>{
             return(
                 <>
-                <div className='Addrees_window__card_wrapper'>
-                    <div className='fstName__lstName'>
-                        <p>{item.firstName}</p>
-                        <p>{item.lastName}</p>
-                    </div>
-    
-                <button className='address__edit_btn'>Edit</button>
-
-                <p className='street'>{item.doorStreetArea}</p>
-                <p className='city'>{item.city}</p>
-                <div className='State__pincode'>
-                    <p>{item.state}</p>
-                    <p>{item.pinCode}</p>
-                </div>
-                <div className='mobile__numbers'>
-                    <p>+91 {item.mobNumber}</p>
-                    <p>+91 {item.altMobNumber}</p>
-                </div>
-                <button onClick={()=> { 
-                    localStorage.setItem("selectAddress",JSON.stringify(item))
-                    SetViewAddress(false);
-                    SetViewShoppingCart(false);
-                    SetViewSummary(true);
-                    } } className='select__address__btn'>Select Address</button>
-                    </div>
+                <AddressCard item={items} 
+                SetViewAddress={SetViewAddress}
+                SetViewShoppingCart={SetViewShoppingCart}
+                SetViewSummary={SetViewSummary}
+                />
 
                 </>
                     )})

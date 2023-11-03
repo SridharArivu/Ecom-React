@@ -1,72 +1,81 @@
-.Addrees_card_wrapper{
-    display: flex;
-    flex-direction: column;
-    height: 12em;
-    width: 24em;
-    padding: 15px;
-    border: 2px solid #D6D6D6;
-    border-radius: 10px;
-    background-color: #ffffff;
-    margin-bottom: 3em; 
-    position: relative;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
 
-.address__edit_btn{
-    position: absolute;
-    right:0;
-    top: 0;
-    color: blueviolet;
-}
-.address__edit_btn:hover{
-    text-decoration: underline;
-}
 
-.Addrees_card_wrapper .fstName__lstName{
+    .Addrees_card_wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 13em;
+        width: 24em;
+        padding: 15px;
+        border: 2px solid #D6D6D6;
+        border-radius: 10px;
+        background-color: #ffffff;
+        margin-bottom: 3em; 
+        position: relative;
+        line-height: 0.1rem;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    }
+    
+    .page__card__test{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        background-color: #935d5d;
+    }
+    
+    
+    
+    .edit_btn{
+        position: absolute;
+        right:0.8rem;
+        top: 0.5rem;
+        color: blueviolet;
+    }
+    .edit_btn:hover{
+        text-decoration: underline;
+    }
+    
+    .Addrees_card_wrapper .fstName__lstName{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;     
+    }
+    
+    .fstName__lstName h4{
+        font-weight: bold; 
+    }
+    
+    .Addrees_card_wrapper .street{
+        color: #4F4F51;
+        margin-left: 10px;
+        height: fit-content;
+        line-height: 1;
+    }
+    .Addrees_card_wrapper .city{
+        color: #4F4F51;
+        margin-left: 10px;
+    }
+    
+    .Addrees_card_wrapper .State__pincode{
         display: flex;
         flex-direction: row;
+        margin-left: 10px;
+        gap: 1rem;
+    }
+    
+    
+    .Addrees_card_wrapper .mobile__numbers{
+        display: flex;
+        flex-direction: row;
+        margin-top: 0.5rem;
+    }
+    
+    .mobile__numbers p{
+        margin-right: 10px;
         
-}
+    }
 
-.fstName__lstName p{
-    margin-right: 10px;
-    font-weight: bold;
-    
-}
-
-.Addrees_card_wrapper .street{
-    color: #4F4F51;
-    margin-left: 10px;
-}
-.Addrees_card_wrapper .city{
-    color: #4F4F51;
-    position: absolute;
-    top: 5em;
-    left: 1.5em;
-}
-
-.Addrees_card_wrapper .State__pincode{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 6.6em;
-    left: 1.5em;
-}
-
-.State__pincode p{
-    margin-right: 10px;
-    color: #4F4F51;
-}
-
-.Addrees_card_wrapper .mobile__numbers{
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    top: 9em;
-}
-
-.mobile__numbers p{
-    margin-right: 10px;
-    
-}
 
