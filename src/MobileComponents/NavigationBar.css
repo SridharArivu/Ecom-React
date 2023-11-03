@@ -38,7 +38,7 @@
 .cart__length{
     position: absolute;
     right: 0.8em;
-    top: 0.7em;
+    top: 0.6em;
     font-weight: bold;
     cursor: pointer;
     z-index: -999;

@@ -7,11 +7,36 @@
     grid-template-columns: auto auto ;
     justify-content: space-between;
 }
+.Product__page__left {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8rem;
+    width: 15.7rem;
+    height: 100%;
+}
+.Product_page_ad{
+    width: 15.7rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.Product_page_ad img{
+    width: 100%;
+    border-radius: 5px;
+}
 
 @media screen and (max-width:1000px){
     .ProductPage__components{
         display: flex;
         flex-direction: column;
         width: 100%;
+    }
+
+    .Product__page__left {
+        display: none;
+        flex-direction: column;
+        padding-top: 8rem;
+        width: 15.7rem;
+        height: 100%;
     }
 }

@@ -1,18 +1,11 @@
 import React,{ useEffect, useState} from 'react'
-// import {TotalQuantity} from '../store/cart-slice';
 import { useSelector } from 'react-redux';
-import CartItems from './CartItems';
-import CartSummary  from './CartSummary'
 import './Cart.css'
 import { totalAmountSelector } from '../store/cart-slice';
 import emptyShopCart from '../Images/emptyShopCart.jpg';
 import {useNavigate} from "react-router-dom"
 import { isAuthenticatedSelector } from '../store/auth-slice';
 import Axios from "../api/Axios";
-import PageNavCart from '../Images/pageNavDisable.png'
-import PageNavShoppingcart from '../Images/PageNavShoppingCart.png'
-import PageNavAddress from '../Images/PageNavAddress.png'
-import PageNavPayment from '../Images/PageNavPayment.png'
 import ShoppingCart from '../CartComponnets/ShoppingCart'
 import SummaryPage from '../CartComponnets/ViewSummary'
 import AddressWindow from './AddressWindow';

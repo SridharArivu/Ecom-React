@@ -2,7 +2,7 @@
 .CartPage__nav{
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     justify-content: space-between;
     width: 67%;
     height: 5rem;
@@ -69,7 +69,7 @@
     color: #ffff;
     font-weight: bold;
     position: absolute;
-    top: 16rem;
+    top: 15rem;
 }
 
 .empty_text h1{
@@ -93,7 +93,7 @@
     .CartPage__nav{
         display: flex;
         flex-direction: row;
-        align-items: end;
+        align-items: flex-end;
         justify-content: space-between;
         width: 93%;
         height: 5rem;
@@ -124,23 +124,27 @@
         height: 100vh;
         width: 100%;
         padding-top: 7rem;
-        align-items: center;
-        justify-content: center;
+        align-items:flex-start;
+        justify-content:flex-start;
+        
     }
     
     .empty__cart img {
+        height: 70%;
         width: 100%;
-        margin-left: 0rem;
+        margin-top:-1rem;
+        margin-left: 0rem;   
     }
     
     .empty_text{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items:center;
+        justify-content:space-between;
         width: 100%;
-        height: 30rem;
+        height: 30%;
         margin-right: 0rem;
+
     }
     
     .empty_text a{
@@ -154,27 +158,27 @@
         color: #ffff;
         font-weight: bold;
         position: absolute;
-        top: 38rem;
+        top:31rem;
     }
     
     .empty_text h1{
         font-weight: bold;
-        padding-bottom: 90px;
+        font-size: 22px;
+        padding-top: 17px;
+        padding-bottom: 0px;
     }
     
     .empty_text .p1{
-        position: absolute;
-        padding-top: 20px;
+        position: none;
+        padding-top: 70px;
+        font-size: 12px;
         color: #656e67;
-        font-weight: bold;
-        font-size:14px;
     }
     .empty_text .p2{
-        position: absolute;
-        padding-top: 70px;
+        position:none;
+        font-size: 12px;
+        padding-top:100px;
         color: #656e67;
-        font-weight: bold;
-        font-size:14px;
     }
     
     

@@ -1,12 +1,44 @@
 .Filter__wrapper{
     display:flex;
     flex-direction: column;
-    position: fixed;
     width: 35vh;
-    height: 100vh;
-    margin-top: 140px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    z-index: -999;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+.Filter__title{
+    font-weight: bold;
+    height: 2rem;
+}
+.Filter__wrapper p{
+    margin: 0;
+    padding-left: 0.5rem;
+}
+
+.Filter__Category{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.Filter__Review{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.Filter__Brand{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.Filter__Price{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 @media screen and (max-width:1000px){

@@ -26,6 +26,8 @@ const Profile = () => {
   const orderDetails = useSelector((state)=> state.account.orderDetails)
   const accountDetails = useSelector((state)=> state.account.accountDetails)
 
+  const redirect = useNavigate();
+
   useEffect(()=>{
     fetchOrderDetails();
     fetchAccountDetails();
@@ -40,6 +42,10 @@ const Profile = () => {
      }).then((res)=>{
        dispatch(accountActions.orderDetailsDispatch(res.data) );
        localStorage.setItem("orderDetails",JSON.stringify(res.data))
+     }).catch((err) =>{
+      if(err.response.status == 403){
+        redirect("/login");
+      }
      })
 
  }
@@ -52,6 +58,10 @@ const Profile = () => {
    }).then((res)=>{
      dispatch(accountActions.userDetailsDispatch(res.data) );
      localStorage.setItem("userDetails",JSON.stringify(res.data))
+   }).catch((err) =>{
+    if(err.response.status == 403){
+      redirect("/login");
+    }
    })
 
 }
@@ -77,10 +87,13 @@ const Profile = () => {
     localStorage.removeItem("searchedProducts");
     localStorage.removeItem("Razorpay_order_id");
     localStorage.removeItem("rzp_checkout_anon_id");
+    localStorage.removeItem("isAuthenticated");
+    
     navigate("/login")
   }
 
-  return (
+  return 
+  (
     <div className='profile__wrapper'>
 
       {/* <=====/#/#/#/#/# DeskTop Components \#\#\#\#\# =====> */}
@@ -177,7 +190,6 @@ const Profile = () => {
           <button onClick={() => HandleSignOut()} > <LuLogOut size={38} /> <span>Sign Out</span> <AiOutlineRight size={25} className='right__icons'/></button>
         </div>
     </div>
-   
   )
 }
 

@@ -1,9 +1,9 @@
 .swiper__wrapper__bestSeller{
-    margin-top: 15px;
+    margin-top: 10px;
     padding-left: 20px;
-    margin-bottom: 50px;
-    height: 34rem;
+    margin-bottom: 5px;
     width: 100%;
+    
 }
 .swiper__wrapper__bestSeller h2{
     padding: 5px;
@@ -23,7 +23,6 @@
         margin-top: 10px;
         padding-left: 10px;
         margin-bottom: 10px;
-        height: 28rem;
         width: 100%;
     }
     .swiper-button-next{
@@ -40,7 +39,6 @@
         margin-top: 10px;
         padding-left: 20px;
         margin-bottom: 10px;
-        height: 30rem;
         width: 100%;
     }
     .swiper-button-next{
@@ -56,7 +54,6 @@
         padding-left: -20px;
         margin-left: -20px;
         margin-bottom: 10px;
-        height: 28rem;
         width: 100%;
     }
     .swiper-button-next{

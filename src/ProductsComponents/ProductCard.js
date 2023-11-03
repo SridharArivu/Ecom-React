@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { cartActions } from '../store/cart-slice';
 import { useSelector } from 'react-redux';
 
+
 const ProductCard = ({prod}) => {
   
 
@@ -27,7 +28,7 @@ const ProductCard = ({prod}) => {
       </div>    
         <div className="product__details">
             <h5 className='prod__title'>{prod.name}</h5>
-            <h5 className='prod__price'>{prod.price}
+            <h5 className='prod__price'> ₹{prod.price}
             <del className='del'>Rs. 2000</del>
             <h5 className='off'>(60% OFF)</h5>
             </h5>

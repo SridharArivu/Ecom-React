@@ -6,11 +6,14 @@ import Axios from '../api/Axios'
 import {IoClose} from 'react-icons/io5'
 import { Button } from 'bootstrap'
 import AddressInput from '../profile/AddressInput'
+import Swal from 'sweetalert2'
+import { useNavigate } from 'react-router-dom'
 
 
 const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
     const [Address, SetAddress] =  useState([]);
     const [showCard , SetShowCard] = useState(true);
+    const redirect = useNavigate();
 
     const authtoken = useSelector((state) => state.auth);
     useEffect(()=>{
@@ -22,8 +25,20 @@ const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
          headers:{
            "Authorization": `Bearer ${authtoken.token}`,
          }
+         
        }).then((res)=>{
         SetAddress(res.data)
+
+       }).catch((err) =>{
+        if(err.response.status == 403 ){
+          Swal.fire({
+            icon: 'error',
+            position: 'center',
+            title: "Please Login to Continue",
+          })
+          redirect("/login");
+          
+        }
        })
    }
   return (

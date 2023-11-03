@@ -14,16 +14,7 @@ const ShoppingCart = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
     const isAuthenticated = useSelector(isAuthenticatedSelector);
     const navigate = useNavigate();
 
-    const checkAuth = () =>{
-        if(isAuthenticated){
-            SetViewAddress(true);
-            SetViewShoppingCart(false);
-            SetViewSummary(false);
-        }else{
-            alert("Please Login to continue");
-            navigate("/login")
-        }
-    }
+    
   return (
     <div className='Shoppingcart__wrapper'>
         <div className='Cart__items'>
@@ -38,8 +29,11 @@ const ShoppingCart = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
         </div>
         <div className='ShoppingCart__summary'>
             <CartSummary totalAmount={TotalAmount} cart={cartState}/>
-            <button className='checkOut__btn' onClick={
-                checkAuth
+            <button className='checkOut__btn' onClick={() =>{
+                    SetViewAddress(true);
+                    SetViewShoppingCart(false);
+                    SetViewSummary(false);
+                }
                 }>CHECKOUT <MdShoppingCartCheckout size={23}/></button>
         </div>
     </div>

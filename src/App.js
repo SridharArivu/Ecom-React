@@ -1,5 +1,6 @@
 import Home from './components/Home'
 import Header from './components/Header'
+import Footer from './components/Footer'
 import Cart from './components/Cart'
 import Login from './Auth/Login';
 import SignUp from './Auth/SignUp';
@@ -43,6 +44,7 @@ function App() {
         
       </Routes>
       <NavigationBar/>
+      <Footer />
   </BrowserRouter>
   
   </div>

@@ -1,0 +1,297 @@
+.Footer_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-start;
+    width: 100%;
+    height: 45vh;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    background-color: #212529;
+    z-index: 999;
+   
+}
+
+.Dev__Deatils{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 50%; 
+}
+
+
+.Dev_Image{
+    height: 80%;
+}
+
+.Dev__Description{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:center;
+    padding-left: 1rem;
+    height: 100%;
+    width: 100%;
+}
+.Dev__name{
+    color: bisque;
+    font-weight: bold
+}
+
+.Dev__Role{
+    color: bisque;
+    font-weight: bold
+}
+
+.Dev__Description p{
+    color:bisque;
+    
+}
+
+.Contact__us{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    width: 25%;
+    height: 100%;
+}
+
+.Contact__h4{
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.Contact__p{
+    color: #ffffff;
+}
+
+.Contact__Social_icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.Social__icons{
+    color: #ffffff;
+}
+
+.Social__icons__YT{
+    color: #ffffff;
+  
+}
+
+
+.NewsLetter{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
+
+.Newsletter__innput{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 2rem;
+}
+
+.Newsletter__inpt__field{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        padding: 10px;
+        outline:2px solid bisque;
+        background-color: #585f66;
+        color: #ffffff;
+}
+
+.Newsletter__inpt__field:focus {
+    outline: 3px solid bisque;
+}
+
+.Subcribe__btn{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    right: 0;
+    background-color: bisque;
+    font-weight: bold;
+    color:#212529;
+}
+
+.Newsletter__p{
+    padding-top: 4rem;
+    color:#939faa;
+}
+
+@media screen and (max-width: 1000px) {
+    .Footer_wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-between;
+        width: 100%;
+        height:fit-content;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        margin-top: 1rem;
+        background-color: #212529;
+        z-index: 999;
+       
+    }
+    
+    .Dev__Deatils{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-evenly;
+        height: 25vh;
+        background-color: #212529;
+        width: 100%; 
+        padding-right: 0.5rem;
+        margin-top: 1rem;
+    }
+    
+    
+    .Dev_Image{
+        height: 20vh;
+    }
+    
+    .Dev__Description{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:center;
+        padding-left: 0rem;
+        height: 20vh;
+        width:100%;
+        
+        
+    }
+    .Dev__name{
+        color: bisque;
+        font-weight: bold;
+        font-size: small;
+    }
+    
+    .Dev__Role{
+        color: bisque;
+        font-weight: bold;
+        font-size: x-small;
+    }
+    
+    .Dev__Description p{
+        color:bisque;
+        font-size:x-small;
+        
+    }
+    
+    .Contact__us{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        width: 100%;
+        height: 22vh;
+        font-size: small;
+    }
+    
+    .Contact__h4{
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        font-size:small;
+    }
+    .Contact__p{
+        color: #ffffff;
+    }
+    
+    .Contact__Social_icons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        justify-content:space-around;
+        padding-top: 0rem;  
+    }
+    
+    .Social__icons{
+        color: #ffffff;
+        font-size:small;
+    }
+    
+    .Social__icons__YT{
+        color: #ffffff;
+      
+    }
+    
+    
+    .NewsLetter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:28vh;
+        width: 100%;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+    }
+    
+    .Newsletter__innput{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        position: none;
+        height: 2rem;
+        width: 80%;
+    }
+    
+    .Newsletter__inpt__field{
+            height: 100%;
+            width: 100%;
+            border-radius: 5px;
+            position: relative;
+            border: none;
+            padding: 10px;
+            outline:2px solid bisque;
+            background-color: #585f66;
+            color: #ffffff;
+    }
+    
+    .Newsletter__inpt__field:focus {
+        outline: 3px solid bisque;
+    }
+    
+    .Subcribe__btn{
+        position:absolute;
+        height: 100%;
+        width: 30%;
+        right:0;
+        background-color:bisque;
+        font-weight: bold;
+        color:#585f66;
+    }
+    
+    .Newsletter__p{
+        padding-top: 0.5rem;
+        color:#939faa;
+        font-size:small;
+    }
+}
+
+

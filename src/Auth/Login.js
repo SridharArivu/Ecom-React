@@ -6,6 +6,7 @@ import Axios from '../api/Axios'
 import { useNavigate } from 'react-router-dom'
 import { UseSelector, useDispatch, useSelector } from 'react-redux'
 import { authActions } from '../store/auth-slice'
+import Swal from 'sweetalert2'
 
 const Login = () => {
 
@@ -14,6 +15,15 @@ const Login = () => {
   const dispatch = useDispatch();
 
   const redirect = useNavigate();
+
+  const UserNotFound = () =>{
+    Swal.fire({
+        icon: 'error',
+        position: 'top',
+        title: "User Not Found",
+      })
+  }
+
 
   const [userDetails, SetUserDetails] = useState({
     email:"",
@@ -28,19 +38,33 @@ const Login = () => {
       password:userDetails.password
     })
     .then((res) =>{
+      Swal.fire({
+        icon: 'success',
+        title: "Login Success !",
+        timer: 1500,
+        showConfirmButton: false,
+      })
       localStorage.setItem("credentilas",  JSON.stringify(res.data.token));
       localStorage.setItem("isAuthenticated",  JSON.stringify(true));
       dispatch(authActions.tokenDispatch(res.data.token));
       dispatch(authActions.setAuthentication("true"));
+      
       redirect("/");
   })
-    .catch(err => console.error(err));
+    .catch(err => 
+      {
+        if(err.response.status == 403){
+          UserNotFound();
+        }
+      }
+      );
   }
 
   return (
     <div className='bg__login'>
        <div className="login__wrapper">
             <div className="form__box__login">
+            
                <h2>Login</h2> 
                <form onSubmit={handleSubmit}>
                 <div className="login_input_box">
