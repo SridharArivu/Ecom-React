@@ -14,8 +14,8 @@
 
 .address__edit_btn{
     position: absolute;
-    left: 20em;
-    top: 0.5em;
+    right:0;
+    top: 0;
     color: blueviolet;
 }
 .address__edit_btn:hover{
