@@ -26,7 +26,7 @@ const Header = () => {
   const HandleSubmit = (e)=> {
       e.preventDefault()
       
-      Axios.get("/products/search?searchTerm="+searchItem).then((response)=>{
+      Axios.get("/products/search?searchTerm="+searchItem.toLowerCase()).then((response)=>{
         SetSearchProduct(response.data);
       })
       navigate("/products");
