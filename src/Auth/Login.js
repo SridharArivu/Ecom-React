@@ -34,7 +34,7 @@ const Login = () => {
     e.preventDefault();
 
     Axios.post("/api/v1/auth/authenticate",{
-      email:userDetails.email,
+      email:userDetails.email.toLowerCase(),
       password:userDetails.password
     })
     .then((res) =>{
