@@ -89,11 +89,11 @@ const ViewSummary = ({HandlePayment,TotalAmount,SetViewAddress,SetViewShoppingCa
           </div>
 
       </div>
-      {/* ======= Advertisemenst Conatiner ======  */}
+      {/* ======= Advertisement Conatiner ======  */}
       
 
       <div className='advertisement'>
-        <h2>Advertisemenst</h2>
+        <h2>Advertisement</h2>
         <p>{Advertisement}</p>
       </div>
     </div>
