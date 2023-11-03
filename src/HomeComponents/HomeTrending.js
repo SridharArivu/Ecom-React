@@ -15,7 +15,7 @@ const HomeTrending = () => {
   const [trending, SetTrending] = useState();
   useEffect(() => {
       window.scrollTo(0, 0);
-      Axios.get("/products/search?searchTerm=watch").then((response)=>{
+      Axios.get("/products/search?searchTerm=trending").then((response)=>{
      SetTrending(response.data);
      
 

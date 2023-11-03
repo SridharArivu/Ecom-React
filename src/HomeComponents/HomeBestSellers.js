@@ -16,7 +16,7 @@ const HomeBestSellers = () => {
   const [bestSeller, SetBestSeller] = useState();
   useEffect(() => {
       window.scrollTo(0, 0);
-      Axios.get("/products/search?searchTerm=shirt").then((response)=>{
+      Axios.get("/products/search?searchTerm=bestseller").then((response)=>{
       SetBestSeller(response.data);
       
   })
