@@ -15,30 +15,30 @@ const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
 
     const authtoken = useSelector((state) => state.auth);
     useEffect(()=>{
-      fetchAddress();
+      Axios.get("/get-address", {
+        headers:{
+          "Authorization": `Bearer ${authtoken.token}`,
+        }
+        
+      }).then((res)=>{
+       SetAddress(res.data)
+
+      }).catch((err) =>{
+       if(err.response.status === 403 ){
+         Swal.fire({
+           icon: 'error',
+           position: 'center',
+           title: "Please Login to Continue",
+         })
+         redirect("/login");
+         
+       }
+      })
     },[showCard])
   
-    const fetchAddress = async ()=>{
-      await Axios.get("/get-address", {
-         headers:{
-           "Authorization": `Bearer ${authtoken.token}`,
-         }
-         
-       }).then((res)=>{
-        SetAddress(res.data)
+    
+      
 
-       }).catch((err) =>{
-        if(err.response.status === 403 ){
-          Swal.fire({
-            icon: 'error',
-            position: 'center',
-            title: "Please Login to Continue",
-          })
-          redirect("/login");
-          
-        }
-       })
-   }
   return (
     <div className='address__window__wrapper'>
       <div className='address__header'>
