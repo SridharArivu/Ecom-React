@@ -5,14 +5,11 @@ import CartItems from '../components/CartItems'
 import CartSummary from '../components/CartSummary'
 import { totalAmountSelector } from '../store/cart-slice';
 import {MdShoppingCartCheckout} from 'react-icons/md';
-import { isAuthenticatedSelector } from '../store/auth-slice';
-import {useNavigate} from "react-router-dom"
+
 
 const ShoppingCart = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
     const cartState = useSelector((state)=> state.cart)
     const TotalAmount = useSelector(totalAmountSelector);
-    const isAuthenticated = useSelector(isAuthenticatedSelector);
-    const navigate = useNavigate();
 
     
   return (

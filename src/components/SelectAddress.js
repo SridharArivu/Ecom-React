@@ -1,9 +1,7 @@
 import React from 'react'
 import './SelectAddress.css'
 import AddressCard from '../profile/AddressCard'
-import { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
-import Axios from '../api/Axios'
+import { useState} from 'react'
 import AddressWindow from './AddressWindow'
 import {MdOutlineHomeWork} from "react-icons/md"
 
@@ -11,7 +9,6 @@ import {MdOutlineHomeWork} from "react-icons/md"
 
 const SelectAddress = ({HandlePayment}) => {
     const [showAddress, SetShowAddress] = useState(false)
-    const [checkOutBtn, SetCheckOutBtn] = useState(true)
     const [addressSelected, SetAddressSelected] = useState(localStorage.getItem("addressSelected"))
 
     const loadAddressFromLocalStorage = () =>{
@@ -40,7 +37,9 @@ const SelectAddress = ({HandlePayment}) => {
             <button className='checkout__btn' onClick={()=> SetShowAddress(true)}>CheckOut</button>
         }
         {
-            showAddress && <AddressWindow SetCheckOutBtn={SetCheckOutBtn} SetShowAddress={SetShowAddress} SetAddressSelected={SetAddressSelected}/>
+            showAddress && <AddressWindow 
+            SetShowAddress={SetShowAddress} 
+            SetAddressSelected={SetAddressSelected}/>
         }
 
          

@@ -4,7 +4,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BiSolidLockAlt} from 'react-icons/bi'
 import Axios from '../api/Axios'
 import { useNavigate } from 'react-router-dom'
-import { UseSelector, useDispatch, useSelector } from 'react-redux'
+import {  useDispatch } from 'react-redux'
 import { authActions } from '../store/auth-slice'
 import Swal from 'sweetalert2'
 
@@ -53,7 +53,7 @@ const Login = () => {
   })
     .catch(err => 
       {
-        if(err.response.status == 403){
+        if(err.response.status === 403){
           UserNotFound();
         }
       }

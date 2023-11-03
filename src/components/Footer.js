@@ -1,11 +1,10 @@
 import React from 'react'
 import './Footer.css'
 import MyProfile from '../Images/MyProfile.jpg.png'
-import Border from '../Images/Border.png'
 import {MdLocationPin} from 'react-icons/md'
 import {BsTelephoneFill} from 'react-icons/bs'
 import {HiMail} from 'react-icons/hi'
-import {FaFacebookSquare,FaYoutube} from 'react-icons/fa'
+import {FaFacebookSquare} from 'react-icons/fa'
 import {BsInstagram,BsLinkedin,BsWhatsapp} from 'react-icons/bs'
 
 const Footer = () => {
@@ -15,7 +14,7 @@ const Footer = () => {
       {/* <=====  Information About Developer =====> */}
 
       <div className='Dev__Deatils'>
-        <img className='Dev_Image' src={MyProfile} alt="Developer Photo" />
+        <img className='Dev_Image' src={MyProfile} alt="Developer_dp" />
 
         <div className='Dev__Description'>
           <h1 className='Dev__name'>Hi, I'm Sridhar</h1>

@@ -5,7 +5,6 @@ import {HiOutlineShoppingBag} from 'react-icons/hi'
 import {FaRegUser} from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import HeaderBelow from '../components/HeaderBelow'
 
 const NavigationBar = () => {
     const cart = useSelector((state)=> state.cart)

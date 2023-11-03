@@ -3,8 +3,6 @@ import './AddressWindow.css'
 import { useState, useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import Axios from '../api/Axios'
-import {IoClose} from 'react-icons/io5'
-import { Button } from 'bootstrap'
 import AddressInput from '../profile/AddressInput'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
@@ -30,7 +28,7 @@ const AddressWindow = ({SetViewAddress,SetViewShoppingCart,SetViewSummary}) => {
         SetAddress(res.data)
 
        }).catch((err) =>{
-        if(err.response.status == 403 ){
+        if(err.response.status === 403 ){
           Swal.fire({
             icon: 'error',
             position: 'center',

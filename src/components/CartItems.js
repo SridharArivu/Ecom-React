@@ -2,9 +2,7 @@
 import './CartItems.css';
 import { cartActions } from '../store/cart-slice';
 import { useDispatch, useSelector } from 'react-redux';
-
 import {BiPlus, BiMinus,BiRupee} from "react-icons/bi"
-import {TotalQuantity} from '../store/cart-slice'
 
 
 const CartItems = ({items}) => {
@@ -44,7 +42,6 @@ const CartItems = ({items}) => {
 
             <div className='item__price'>
                 <h3><span><BiRupee size={30}/></span>{items.totalPrice}</h3>
-                <h3 className='total_price'></h3>
             </div>
         
     </div>

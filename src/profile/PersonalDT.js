@@ -1,4 +1,3 @@
-import React,{useEffect} from 'react'
 import './PersonalDt.css'
 import {BiSolidUserCircle} from 'react-icons/bi'
 import { useSelector } from 'react-redux'

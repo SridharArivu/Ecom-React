@@ -5,6 +5,7 @@ import Axios from '../api/Axios'
 import {useSelector } from 'react-redux'
 
 
+
 const AddressInput = ({SetShowCard}) => {
 
     const authToken = useSelector((state)=>state.auth)
@@ -62,7 +63,7 @@ const AddressInput = ({SetShowCard}) => {
   return (
     <div className='address__input__wrapper'>
         <h4 className='heading'>Enter Your Address</h4>
-        <button className='close_icon' onClick={()=>SetShowCard(false)}><IoClose size={25}/></button>
+        <button className='close_icon' onClick={()=>SetShowCard(false) }><IoClose size={25}/></button>
       
         <form className='form__grid' onSubmit={HandleSaveAddress} >
 

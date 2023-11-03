@@ -1,13 +1,9 @@
-import React, { useState } from 'react'
 import './CartSummary.css';
-import {HiOutlineArrowNarrowRight} from "react-icons/hi"
 import {BiRupee} from 'react-icons/bi'
-import SelectAddress from './SelectAddress';
-import {GrStatusGood} from "react-icons/gr"
 import {LuVerified} from 'react-icons/lu'
 
 const CartSummary = ({totalAmount,cart}) => {
-    const [showSummary, SetShowSummary] = useState(false)
+    
   return (
     <div className='summary__wrapper'>
             

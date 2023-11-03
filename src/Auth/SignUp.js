@@ -3,7 +3,7 @@ import {HiOutlineMail} from 'react-icons/hi'
 import {BiSolidLockAlt,BiSolidUser} from 'react-icons/bi'
 import {FiPhone} from "react-icons/fi";
 import './SignUp.css'
-import { useRef,useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import  Axios  from '../api/Axios';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch , useSelector} from 'react-redux';
@@ -33,8 +33,7 @@ const SignUp = () => {
       }else{
         SetMatchPassError(false);
       }
-
-    },[pwdMatch])
+    },[pwdMatch,pass])
 
     useEffect(()=>{
       localStorage.setItem("credentilas", JSON.stringify(authState));

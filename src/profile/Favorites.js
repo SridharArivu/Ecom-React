@@ -17,7 +17,7 @@ const Favorites = () => {
   return (
     <div className='Fav__wrapper'>
         <div className='Fav__images'>
-            <img src={prod.image}/>
+            <img src={prod.image} alt='prod'/>
         </div>
         <div className='Fav__Details'>
           <h1>{prod.name}</h1>

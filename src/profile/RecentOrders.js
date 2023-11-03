@@ -1,7 +1,6 @@
 import React from 'react'
 import './RecentOrders.css'
 import { BiRupee} from 'react-icons/bi'
-import cardimage from '../Images/CardImage.png'
 
 const RecentOrders = ({items}) => {
 

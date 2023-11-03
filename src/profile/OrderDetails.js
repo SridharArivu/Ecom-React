@@ -1,11 +1,6 @@
-import React, {useState, useEffect} from 'react'
+
 import './OrderDetails.css'
-import image from '../Images/CardImage.png'
 import {BiRupee} from 'react-icons/bi'
-import { useSelector } from 'react-redux'
-import Axios from '../api/Axios'
-import { useDispatch } from 'react-redux'
-import { accountActions } from '../store/account-slice'
 
 const OrderDetails = ({items}) => {
 
@@ -24,7 +19,7 @@ const OrderDetails = ({items}) => {
                 return (
                     <>
                     <div className='order__images'>
-                        <img src={item.productImage}/>
+                        <img src={item.productImage} alt='proimg'/>
                     </div>
                     </>
                 )

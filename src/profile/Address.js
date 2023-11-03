@@ -14,7 +14,7 @@ const Address = () => {
   const authtoken = useSelector((state) => state.auth);
   useEffect(()=>{
     fetchAddress();
-  },[])
+  })
 
   const fetchAddress = async ()=>{
     await Axios.get("/get-address", {

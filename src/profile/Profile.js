@@ -15,7 +15,6 @@ import Axios from '../api/Axios';
 import { useSelector } from 'react-redux'
 import { accountActions } from '../store/account-slice'
 import { useDispatch } from 'react-redux'
-import {GiHamburgerMenu} from 'react-icons/gi'
 
 
 const Profile = () => {
@@ -32,7 +31,7 @@ const Profile = () => {
     fetchOrderDetails();
     fetchAccountDetails();
     
-  },[])
+  })
 
   const fetchOrderDetails = async ()=>{
     await Axios.get("account-details/order-details", {
@@ -43,7 +42,7 @@ const Profile = () => {
        dispatch(accountActions.orderDetailsDispatch(res.data) );
        localStorage.setItem("orderDetails",JSON.stringify(res.data))
      }).catch((err) =>{
-      if(err.response.status == 403){
+      if(err.response.status === 403){
         redirect("/login");
       }
      })
@@ -59,7 +58,7 @@ const Profile = () => {
      dispatch(accountActions.userDetailsDispatch(res.data) );
      localStorage.setItem("userDetails",JSON.stringify(res.data))
    }).catch((err) =>{
-    if(err.response.status == 403){
+    if(err.response.status === 403){
       redirect("/login");
     }
    })
@@ -92,8 +91,7 @@ const Profile = () => {
     navigate("/login")
   }
 
-  return 
-  (
+  return (
     <div className='profile__wrapper'>
 
       {/* <=====/#/#/#/#/# DeskTop Components \#\#\#\#\# =====> */}
