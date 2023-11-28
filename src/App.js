@@ -18,13 +18,14 @@ import { Routes, Route , BrowserRouter} from 'react-router-dom';
 import WishList from './wishlist/wishList';
 import Profile from './profile/Profile';
 import OrderConfirm from './components/OrderConfirm';
-
+import ScrollToTop from './ScrollToTop';
 
 function App() {
 
   return (
     <div >
     <BrowserRouter>
+    <ScrollToTop>
       <Header />
       <HeaderBelow/>
       <Routes>
@@ -45,6 +46,7 @@ function App() {
       </Routes>
       <NavigationBar/>
       <Footer />
+      </ScrollToTop>
   </BrowserRouter>
   
   </div>
