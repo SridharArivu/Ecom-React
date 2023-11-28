@@ -46,6 +46,14 @@ console.log(address);
     loadAddressFromLocalStorage();
   },[cartState]);
 
+  
+
+    useEffect(()=>{
+      navigate(()=>{
+        window.scrollTo(0,0);
+      })
+    })
+
 
 
   const HandlePayment = async (e) =>{
