@@ -49,9 +49,7 @@ console.log(address);
   
 
     useEffect(()=>{
-      navigate(()=>{
         window.scrollTo(0,0);
-      })
     })
 
 
