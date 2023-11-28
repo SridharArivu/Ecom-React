@@ -30,7 +30,10 @@ const Profile = () => {
   useEffect(()=>{
     fetchOrderDetails();
     fetchAccountDetails();
-    
+  })
+
+  useEffect(()=>{
+    window.scrollTo(0,0);
   })
 
   const fetchOrderDetails = async ()=>{
