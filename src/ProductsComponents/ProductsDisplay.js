@@ -13,6 +13,13 @@ const ProductsDisplay = ({searchItem}) => {
     localStorage.setItem("searchedProducts",JSON.stringify(SearchProduct))
   },[SearchProduct])
 
+  useEffect(()=>{
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  })
+
 
   return (
       <div className='display__wrapper'>
