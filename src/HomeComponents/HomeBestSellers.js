@@ -10,14 +10,17 @@ import 'swiper/css';
 import './HomeBestSellers.css';
 import Axios from '../api/Axios';
 import {LiaHotjar} from 'react-icons/lia'
+import SkeletonLoading from '../ProductsComponents/SkeletonLoading'
 
 const HomeBestSellers = () => {
 
   const [bestSeller, SetBestSeller] = useState();
+  const [isLoading, SetIsLoading] = useState(true);
   useEffect(() => {
       window.scrollTo(0, 0);
       Axios.get("/products/search?searchTerm=bestseller").then((response)=>{
       SetBestSeller(response.data);
+      SetIsLoading(false);
       
   })
   },[]);
@@ -65,9 +68,13 @@ const HomeBestSellers = () => {
               }
             }}
         >
-        {bestSeller?.map((prod)=>(
-              <SwiperSlide><ProductCard prod={prod} key={prod.id}/></SwiperSlide>
-          ))}
+        {isLoading ? <div className='skeleton__wrapper'><SkeletonLoading/> <SkeletonLoading/> <SkeletonLoading/></div>
+        :
+        bestSeller?.map((prod)=>(
+          <SwiperSlide><ProductCard prod={prod} key={prod.id}/></SwiperSlide>
+      ))
+        }
+        
         
     </Swiper>
     </div>

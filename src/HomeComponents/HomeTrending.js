@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import ProductCard from '../ProductsComponents/ProductCard'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, A11y } from 'swiper/modules';
+import SkeletonLoading from '../ProductsComponents/SkeletonLoading'
 //Import Swiper Styles
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -10,14 +11,17 @@ import './HomeTrending.css';
 import {HiTrendingUp} from 'react-icons/hi'
 import Axios from '../api/Axios';
 
+
 const HomeTrending = () => {
 
   const [trending, SetTrending] = useState();
+  const [isLoading, SetIsLoading] = useState(true);
   useEffect(() => {
       window.scrollTo(0, 0);
       Axios.get("/products/search?searchTerm=trending").then((response)=>{
      SetTrending(response.data);
-     
+     SetIsLoading(false);
+  
 
   })
   },[]);
@@ -65,7 +69,10 @@ const HomeTrending = () => {
               }
             }}
         >
-          {trending?.map((prod)=>(
+          {isLoading ? <div className='skeleton__wrapper'><SkeletonLoading/> <SkeletonLoading/> <SkeletonLoading/></div>
+          :
+          trending?.map((prod)=>(
+            
               <SwiperSlide><ProductCard prod={prod} key={prod.id}/></SwiperSlide>
           ))}
         
