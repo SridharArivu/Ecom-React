@@ -39,7 +39,7 @@ const Header = () => {
     <>
     <nav className='header__main'>
       <div className="header__logo">
-          <img className='header_Logo' src={Logo} alt="WebsiteLogo" /> 
+          <a href="/"><img  className='header_Logo' src={Logo} alt="WebsiteLogo" /> </a>
       </div>
       <form className="searchBar" onSubmit={HandleSubmit} >
         <input type='text' value={searchItem} onChange={(e)=>SetSearchItem(e.target.value)} placeholder='Search for Products'/>
